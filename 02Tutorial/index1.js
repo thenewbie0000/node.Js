@@ -46,17 +46,3 @@ fs.appendFile(path.join(__dirname, 'files', 'test.txt'), "Testing Append File",(
   if(err) throw err;
   console.log('Append Operation Successful');
 });
-
-
-const fsPromises = require('fs').promises;
-const fileOps = async()=>{
-  try{
-    const data = await fsPromises.readFile(path.join(__dirname, 'files', 'starter.txt'), 'utf-8');
-    console.log(data);
-
-  }catch(err){
-    console.error(err);
-  }
-}
-
-fileOps();
