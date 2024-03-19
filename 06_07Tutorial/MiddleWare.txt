@@ -1,0 +1,6 @@
+It is anything between the request and response
+
+Three types of middleware are:
+Buit In
+Custom
+MiddleWare from thrid party
