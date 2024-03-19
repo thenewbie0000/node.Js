@@ -2,10 +2,10 @@
   "name": "03tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "indexOfTut04.js",
   "scripts": {
-    "start": "node index",
-    "dev": "nodemon index"
+    "start": "node indexOfTut04",
+    "dev": "nodemon indexOfTut04"
   },
   "author": "Rojesh Shrestha",
   "license": "ISC",
