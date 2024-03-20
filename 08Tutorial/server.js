@@ -35,7 +35,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // serve static files
-app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.static(path.join(__dirname, "/public"))); // here no directory is given which means default '/' was the directory
+app.use('/subdir', express.static(path.join(__dirname, "/public")));  // thismeans to apply css of public dir to any files in subdir directory
+
+app.use('/subdir', require('./routes/subdir'));   // this will direct anything coming for files in /subdir directory to ./routes/subdir
 
 app.get("^/$|/index(.html)?", (req, res) => {
   // here the regex ^/$ |/index(.html)? means either a file starting and ending with / or the /index.html file where (.html)? means the .html is optional

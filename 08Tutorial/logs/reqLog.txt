@@ -33,3 +33,12 @@
 2024/03/19	18:01:16	f0f12b48-d9cc-4adc-aa12-575796f029b8	GET	undefined	/css/style.css
 2024/03/19	18:01:20	65659c81-a985-4024-8922-5dcd9dc0519b	GET	undefined	/dave.txt
 2024/03/19	18:01:20	6fd47a3d-0d2b-41cf-9b30-ce7aed5b274e	GET	undefined	/css/style.css
+2024/03/20	07:56:14	f896bfa3-5b80-472e-bdf7-a10003cae7f1	GET	undefined	/
+2024/03/20	07:56:14	051eb696-f0fe-402f-8589-985460c3f06a	GET	undefined	/css/style.css
+2024/03/20	07:56:14	71fee4ca-4e02-47cb-a8b1-7620fb15084c	GET	undefined	/favicon.ico
+2024/03/20	07:56:23	2ff666a1-5f19-47e4-ae45-3d2d40417d00	GET	undefined	/subdir/
+2024/03/20	07:56:28	31163e9b-a0e6-4870-98af-d6d871207725	GET	undefined	/subdir/test
+2024/03/20	07:56:39	faa4fa77-0278-455e-922c-1cfeb1a02fb7	GET	undefined	/subdir/wwe
+2024/03/20	07:56:39	420849ae-ea6d-42fe-88df-5aea2403ed9b	GET	undefined	/subdir/css/style.css
+2024/03/20	07:58:22	49f7c704-126e-4348-b8b9-a625d77722c5	GET	undefined	/subdir/wwe
+2024/03/20	07:58:22	7140bcdd-c8c6-43d4-9e96-fbc3ecc388dc	GET	undefined	/subdir/css/style.css

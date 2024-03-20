@@ -1,6 +1,0 @@
-2024/03/19	13:31:26	fec3355c-eb10-40d7-aab5-ae9c73466d60	/new-pagesacfas	GET
-2024/03/19	13:31:26	0e8095ce-3751-41af-b541-8693218aca37	/css/style.css	GET
-2024/03/19	13:32:19	c3a76e82-3bcb-4d22-ab2f-548ba079320b	/new-pagesacfas	GET
-2024/03/19	13:33:09	6b69fd49-ff7c-4a5f-bcfe-d98e92f2dd68	/new-page	GET
-2024/03/19	13:33:09	90f96a26-0d14-46e8-b3c1-5ebd60df5cb6	/css/style.css	GET
-2024/03/19	13:33:09	3ecea735-f0ae-497a-9b70-d2da76d1398d	/img/img1.jpg	GET
