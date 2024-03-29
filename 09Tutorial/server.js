@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
 const PORT = process.env.PORT || 3500;
@@ -10,21 +11,6 @@ const PORT = process.env.PORT || 3500;
 app.use(logger);
 
 // CORS = Cross Origin Resource Sharing
-const whiteList = [
-  "https://www.mywebsite.com",
-  "http://127.0.0.1:5500",
-  "http://localhost:3500",
-]; //websites allowed for backend
-const corsOptions = {
-  origin: (origin, callback) => {
-    if (whiteList.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not Allowed by CORS"));
-    }
-  },
-  optionsSuccessStatus: 200,
-};
 app.use(cors(corsOptions));
 
 //built in middleware to handle urlencoded data ie form data
@@ -36,16 +22,14 @@ app.use(express.json());
 
 // serve static files
 app.use(express.static(path.join(__dirname, "/public"))); // here no directory is given which means default '/' was the directory
-app.use('/subdir', express.static(path.join(__dirname, "/public")));  // thismeans to apply css of public dir to any files in subdir directory
+// app.use('/subdir', express.static(path.join(__dirname, "/public")));  // thismeans to apply css of public dir to any files in subdir directory
 
 
 //routes
 app.use('/', require('./routes/root'));
 app.use('/employees', require('./routes/api/employees'));
 
-app.use('/subdir', require('./routes/subdir'));   // this will direct anything coming for files in /subdir directory to ./routes/subdir
-
-
+//app.use('/subdir', require('./routes/subdir'));   // this will direct anything coming for files in /subdir directory to ./routes/subdir
 
 //Route Handlers
 // app.get(
