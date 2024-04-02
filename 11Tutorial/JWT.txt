@@ -1,0 +1,11 @@
+JWT = JSON Web Tokens
+form of user identification after authentication 
+
+when user logins, REST API will issue the client app an access token and refresh token
+access token is short time 5-15min and send as JSONit is stores in memory by client donot store in local storage or cookies
+issued at authentication
+
+refresh token is several hours even days
+it is sent as httpOnly cookiesnot accessible via JSON
+must have expiry at some point
+issued at authentication
